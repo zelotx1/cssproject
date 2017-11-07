@@ -1,3 +1,63 @@
 body{
     background-image: url(img/48-Ice.png);
 }
+@media screen and (max-width:768px) {
+}
+@media screen and (min-width:768px) and (max-width:992px){
+
+}
+@media screen and (min-width:992px) {
+    
+}
+/*导航*/
+#menunav{
+  background-color: white;
+}
+.navbar-nav li{
+    margin: 0px 5px;
+}
+.l1{
+    border-bottom: 2px solid #1744b7;
+}
+.l2{
+    border-bottom: 2px solid #da280b;
+}
+.l3{
+    border-bottom: 2px solid #fec20a;
+}
+.l4{
+    border-bottom: 2px solid #b800f4;
+}
+.l5{
+    border-bottom: 2px solid #b800f4;
+}
+.l6{
+    border-bottom: 2px solid #e25a00;
+}
+/*内容*/
+/*part1*/
+#part1{
+    padding-top: 50px;
+}
+#part1 #p1-1{
+    margin-bottom: 15px;
+}
+#part1 img{
+    box-shadow: 0px 1px 2px 1px rgba(55,55,55,0.8);
+}
+.carousel-caption{
+    text-align: left;
+}
+#p1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;  
+}
+#p1 .carousel-caption{
+    margin-bottom: 20px;
+}
+#part1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}

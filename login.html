@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>登录</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![ednif]-->
+</head>
+  <style>
+      *{
+          margin: 0px;
+          padding: 0px;
+      }
+      body{
+          background-image: url(img/login/bg1.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+}
+      @media screen and (max-width:768px) {
+         .col-md-5{
+          margin:90px 0px;
+      } 
+          #close{
+          position: relative;bottom: 670px;right: 10px;
+          border: 1px solid;
+          }
+          body{
+              background-size: 100%;
+          }
+      }
+      @media screen and (min-width:768px) and (max-width:992px){
+      .col-md-5{
+          margin:90px;
+          }
+          #close{
+          position: relative;bottom: 720px;right: 50px;
+          }
+          body{
+              background-size: 150%;
+          }
+      }
+      @media screen and (min-width:992px) {
+          .col-md-5{
+          margin:90px;
+      }
+          #close{
+          position: relative;bottom: 720px;right: 50px;
+      }
+          body{
+              background-size: 100%;
+          }
+      }
+      .container .col-md-5{
+          background-color: white;
+          padding: 30px;
+      }
+      .col-md-5 h3{
+          margin-top: 30px;
+          font-weight: bold;
+          font-size: 35px
+      }
+      .col-md-5 input{
+          margin: 30px 0px;
+      }
+      .col-md-5 .btn{
+          width: 100%;
+          border-radius: 0px;
+      }
+      #a1{
+          display: inline-block;
+          margin:20px 0px;
+      }
+      #a2{
+          display: inline-block;
+          margin: 20px 0px;
+      }
+      .col-md-5 span{
+          font-size: 18px;
+          font-weight: 700;
+      }
+      #close{
+          height: 40px;
+          width: 40px;
+          background-color: white;
+          line-height: 40px;
+          text-align: center;
+          display: inline-block;
+          float: right;
+      }
+      #close a{
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          color: black;
+      }
+
+  </style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-xs-12 col-sm-6">
+                <h3>多彩新闻</h3>
+                <h3>登录</h3>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                <a href="#" class="btn btn-primary btn-lg" role="button">登录</a><br>
+                <a href="" id="a1">忘记密码？</a>
+                <hr>
+                <span>还没有多彩新闻账号？</span><br>
+                <a href="" id="a2">立即注册</a>
+            </div>
+        </div>
+    </div>
+    <div id="close">
+        <a href="home.html"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+    </div>
+</body>
+</html>
