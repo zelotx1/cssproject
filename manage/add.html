@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>新闻管理</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![ednif]-->
+</head>
+<style>
+    body{
+        background-image: url(/img/login/bg3.jpg);
+    }
+    /*导航栏*/
+    #menunav{
+      background-color: white;
+    }
+    .navbar-nav li{
+        margin: 0px 5px;
+    }
+    .l1{
+        border-bottom: 2px solid #1744b7;
+    }
+    .l2{
+        border-bottom: 2px solid #da280b;
+    }
+    .l3{
+        border-bottom: 2px solid #fcff27;
+    }
+    .l4{
+        border-bottom: 2px solid #b800f4;
+    }
+    .l5{
+        border-bottom: 2px solid #3aec04;
+    }
+    .l6{
+        border-bottom: 2px solid #ff8400;
+    }
+    /*内容*/
+    #p1{
+        margin-top: 100px;
+
+    }
+    #p1 h3{
+        text-align: center;
+    }
+    .col-md-6{
+        margin-left: 320px;
+        background-color: white;
+    }
+    .time{
+        margin-top: 20px;
+    }
+    .form-control{
+        margin-top: 20px;
+    }
+    .n{
+        margin-top: 20px;
+    }
+    #add{
+        margin-top: 10px;
+        height: 300px;
+    }
+    textarea{
+        width: 100%;
+    }
+    #a1,#a2{
+        width: 100px;
+    }
+    #a1{
+        margin-left: 150px;
+    }
+    #a2{
+        margin-left: 50px;
+    }
+    </style>
+<body>
+<!--导航栏-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menunav">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">切换导航</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="home.html" class="navbar-brand">多彩新闻</a>
+           </div>
+           <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav ul1 navbar-left">
+                 <li class=" l1 active"><a href="/manage/add.html" >添加新闻</a></li>
+                 <li class="l2"><a href="/manage/find.html" >查询新闻</a></li>
+                 <li class="l3"><a href="/manage/del.html" >删除新闻</a></li>
+                 <li class="l4"><a href="/manage/update.html" >更新新闻</a></li>
+             </ul>
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="/home.html">返回主页</a></li>
+                   <li><a href="/page/call.html">联系我们</a></li>
+                   <li><a href="/page/login.html">登录</a></li>
+                   <li><a href="/page/regist.html">注册</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+<!--内容-->
+    <div class="container" id="p1">
+       <div class="row">
+       <div class="col-md-6">
+       <h3>添加新闻</h3>
+        <input type="text" class="form-control" placeholder="请输入标题" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="输入作者姓名" aria-describedby="basic-addon1">
+<!--时间-->
+       <div class="time">
+        请输入时间 
+<!--年-->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">年</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">1990</a></li>
+    <li><a href="#">1991</a></li>
+    <li><a href="#">1992</a></li>
+    <li><a href="#">1993</a></li>
+  </ul>
+</div>
+<!--月-->
+      <div class="btn-group">
+  <button type="button" class="btn btn-danger">月</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">1月</a></li>
+    <li><a href="#">2月</a></li>
+    <li><a href="#">3月</a></li>
+    <li><a href="#">4月</a></li>
+  </ul>
+</div>
+<!--日-->
+             <div class="btn-group">
+  <button type="button" class="btn btn-danger">日</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">1月</a></li>
+    <li><a href="#">2月</a></li>
+    <li><a href="#">3月</a></li>
+    <li><a href="#">4月</a></li>
+  </ul>
+</div>
+       </div>
+       <hr>
+<!--内容-->
+     <div class="n">
+      请输入要添加的新闻<br>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+       <a id="a1" href="#" class="btn btn-primary btn-lg" role="button">提交</a>
+       <a id="a2" href="#" class="btn btn-primary btn-lg" role="button">返回首页</a>
+
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
