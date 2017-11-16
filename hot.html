@@ -17,11 +17,92 @@
     <![ednif]-->
 </head>
 <style>
-
-    #hot img{
+@media screen and (max-width:768px) {
+        .col1{
+        width: 100%;
+        display: block;
+        
+    }
+        .col2{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hot{
+        background-size: 200%;
+        background-position: 0px 35px;
+    }
+    .well h4{
+        font-size: 18px;
+    }
+    .well p{
+        font-size: 12px;
+    }
+        .well .ping{
+        float: left;
+        margin-top: 5px;
+    }
+        #hot img{
         box-shadow: none;
         border-radius: 0;
+        height: 140px;
+        width: 260px;
     }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 600px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 150%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+
+}
+@media screen and (min-width:992px) {
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 600px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 100%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+    
+}
     .well{
         border-radius: 0px;
         padding: 10px;
@@ -36,7 +117,6 @@
     }
     #hot{
         background-image: url(img/hot/bg.jpg);
-        background-size: 100%;
         background-repeat: no-repeat;
         background-color: #e7e7e7;
     }
@@ -44,14 +124,8 @@
         font-size: 50px;
         color: white;
     }
-    #part1{
-        margin-top: 50px;
-    }
-
-
     .well .ping{
         float: left;
-        margin-top: 35px;
     }
     </style>
 <body id="hot">
@@ -102,10 +176,10 @@
     <h1>热点</h1>
     <div class="col1">
         <div class="row well" style="margin-top: 100px;border-top: 5px solid #da280b">
-           <div class="col-md-4">
-               <a href=""><img src="img/part1-1.jpg" style="height: 160px" alt="" class="img-responsive img-rounded"></a>
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="img/part1-1.jpg" alt="" class="img-responsive img-rounded"></a>
            </div> 
-           <div class="col-md-8">
+           <div class="col-md-8 col-xs-8">
                <a href=""><h4>揭秘世界顶级航母：这艘航母造价30亿英镑</h4></a>
                <p>英国皇家海军首艘伊丽莎白女王级航母“伊丽莎白女王”号，从朴茨茅斯军港启航，准备进行第二次海上试航测试。</p>
                <div class="ping">
@@ -114,10 +188,10 @@
            </div>
         </div>
         <div class="row well">
-           <div class="col-md-4">
-               <a href=""><img src="img/hot/w1.jpg" style="height: 160px;width: 260px" alt="" class="img-responsive img-rounded"></a>
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="img/hot/w1.jpg" alt="" class="img-responsive img-rounded"></a>
            </div> 
-           <div class="col-md-8">
+           <div class="col-md-8 col-xs-8">
                <a href=""><h4>解读习近平APEC演讲：塑造亚太发展方向，阐释中国新征程</h4></a>
                <p>新华社北京11月11日消息，国家主席习近平10日在越南岘港举行的亚太经合组织工商领导人峰会上发表主旨演讲，就亚太地区如何在世界经济深刻转变的背景下抓住机遇实现更大发展提出四点主张。</p>
                <div class="ping">
@@ -126,10 +200,10 @@
            </div>
         </div>
             <div class="row well">
-           <div class="col-md-4">
-               <a href=""><img src="img/hot/w2.jpg" style="height: 160px;width: 260px" alt="" class="img-responsive img-rounded"></a>
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="img/hot/w2.jpg" alt="" class="img-responsive img-rounded"></a>
            </div> 
-           <div class="col-md-8">
+           <div class="col-md-8 col-xs-8">
                <a href=""><h4>马云铺垫一年，“新零售”超越“成交额”成“双11”主角</h4></a>
                <p>11月11日13时09分，2017年天猫“双11”商品成交额达1207亿元，超过去年“双11”全天。
                 如往年一样，在下一次“双11”前，这个数字将成为全球电商平台的单日成交额最高纪录。</p>
@@ -139,10 +213,10 @@
            </div>
         </div>
         <div class="row well">
-           <div class="col-md-4">
-               <a href=""><img src="img/hot/w3.jpg" style="height: 160px;width: 260px" alt="" class="img-responsive img-rounded"></a>
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="img/hot/w3.jpg" alt="" class="img-responsive img-rounded"></a>
            </div> 
-           <div class="col-md-8">
+           <div class="col-md-8 col-xs-8">
                <a href=""><h4>美国“退群”后，剩下11国将TPP更名为“CPTTP”</h4></a>
                <p>11月11日，日本经济再生担当大臣茂木敏充与越南工贸部长陈俊英在越南岘港举行新闻发布会，两人共同宣布除美国外的11国就继续推进TPP正式达成一致，新名称为“全面且先进的TPP”</p>
                <div class="ping">
@@ -151,10 +225,10 @@
            </div>
         </div>
         <div class="row well">
-           <div class="col-md-4">
-               <img src="img/hot/w4.jpg" style="height: 160px;width: 260px" alt="" class="img-responsive img-rounded">
+           <div class="col-md-4 col-xs-4">
+               <img src="img/hot/w4.jpg" alt="" class="img-responsive img-rounded">
            </div> 
-           <div class="col-md-8">
+           <div class="col-md-8 col-xs-8">
                <h4>世界被搞糊涂了！这两天，中美又悄悄互换了一下角色</h4>
                <p>特朗普：我不会允许美国再被薅羊毛，我将永远是美国第一，我希望在座的，也将你们国家放在第一位。英国《金融时报》的描述是：听众里几乎没人为他的讲话鼓掌。</p>
                <div class="ping">
