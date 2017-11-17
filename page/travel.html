@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>旅游</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/mycss.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![ednif]-->
+</head>
+<style>
+@media screen and (max-width:768px) {
+        .col1{
+        width: 100%;
+        display: block;
+        
+    }
+        .col2{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hot{
+        background-size: 200%;
+        background-position: 0px 35px;
+    }
+    .well h4{
+        font-size: 18px;
+    }
+    .well p{
+        font-size: 12px;
+    }
+        .well .ping{
+        float: left;
+        margin-top: 5px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 140px;
+        width: 260px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 500px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 150%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+        .well .ping{
+        float: left;
+        margin-top: 35px;
+    }
+
+}
+@media screen and (min-width:992px) {
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 450px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 100%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+        .well .ping{
+        float: left;
+        margin-top: 35px;
+    }
+}
+    .well{
+        border-radius: 0px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .well h4{
+        color: black;
+        font-weight: bold;
+    }
+    .well .col-md-4{
+        padding-left: 0px;
+    }
+    #hot{
+        background-image: url(/img/tra/deanna-ritchie-227649.jpg);
+        background-repeat: no-repeat;
+        background-color: #e7e7e7;
+    }
+    #hot h1{
+        font-size: 50px;
+        color: white;
+    }
+    .well .ping{
+        float: left;
+    }
+    </style>
+<body id="hot">
+<!--导航栏-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menunav">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">切换导航</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="home.html" class="navbar-brand">多彩新闻</a>
+           </div>
+           <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav ul1 navbar-left">
+                 <li class=" l1"><a href="/home.html" >精选</a></li>
+                 <li class="l2"><a href="hot.html" >热点</a></li>
+                 <li class="l3"><a href="cai.html" >财经</a></li>
+                 <li class="l4"><a href="society.html" >社会</a></li>
+                 <li class="l5"><a href="sport.html" >体育</a></li>
+                 <li class="l6 active"><a href="travel.html" >旅游</a></li>
+                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">旅游</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">军事</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">时尚</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">历史</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">天气</a></li>
+          </ul>
+</li>
+             </ul>
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="/page/login.html">登录</a></li>
+                   <li><a href="/page/regist.html">注册</a></li>
+                   <li><a href="/manage/add.html">管理</a></li>
+                   <li><a href="/page/call.html">联系我们</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+<!--内容-->
+<div id="part1">
+<div class="container">
+    <h1>旅游</h1>
+    <div class="col1">
+        <div class="row well" style="margin-top: 100px;border-top: 5px solid #ff8400">
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="/img/tra/w1.jpg" alt="" class="img-responsive img-rounded"></a>
+           </div> 
+           <div class="col-md-8 col-xs-8">
+               <a href=""><h4>航拍中国｜熟悉的城市，陌生的风景：深圳的头顶万象</h4></a>
+               <p>我们一直仰望苍穹，当以天眼的视角俯瞰，反思的视角回望，有了一种新异的感觉。”文化学者邓康延这样形容空中视角带给人们的体验。近些年来，航拍已成为记录生活的一种新潮方式。</p>
+               <div class="ping">
+                <span>20分钟前</span> &nbsp; <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 89
+             </div>
+           </div>
+        </div>
+        <div class="row well">
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="/img/tra/w2.jpg" alt="" class="img-responsive img-rounded"></a>
+           </div> 
+           <div class="col-md-8 col-xs-8">
+               <a href=""><h4>我睡过满世界的青年旅舍 这10家最不容错过!</h4></a>
+               <p>常年世界各地独行的小编，睡过的青年旅社大概有40-50家，好的青旅舒适度不低于酒店，作为一个有故事的女同学，从住过的里面挑了10个最喜欢的分享于此。</p>
+               <div class="ping">
+                <span>35分钟前</span> &nbsp; <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 66
+             </div>
+           </div>
+        </div>
+            <div class="row well">
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="/img/tra/w3.jpg" alt="" class="img-responsive img-rounded"></a>
+           </div> 
+           <div class="col-md-8 col-xs-8">
+               <a href=""><h4>为什么说冬天要去一次新疆?</h4></a>
+               <p>很多人都觉得新疆的秋是最美的，几乎很少有人注意到它的冬，美到动人心魄,新疆的冬季是一个黑白分明的世界，不像春天那样清澈透明，夏天那样碧波荡漾，秋天那样浓绿尽染，银装素裹。</p>
+               <div class="ping">
+                <span>1小时前</span> &nbsp; <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 47
+             </div>
+           </div>
+        </div>
+        <div class="row well">
+           <div class="col-md-4 col-xs-4">
+               <a href=""><img src="/img/tra/w4.jpg" alt="" class="img-responsive img-rounded"></a>
+           </div> 
+           <div class="col-md-8 col-xs-8">
+               <a href=""><h4>从北京开往莫斯科的列车 沿途风光不虚此行</h4></a>
+               <p>每周三或周六，都会有列车由北京发往莫斯科。它是世界上最长的火车线路，也是一场横跨亚欧大陆的旅行。K3次列车在蒙古国境内运行时，一路上都是比内蒙更加原生态的大草原。</p>
+               <div class="ping">
+                <span>3小时前</span> &nbsp; <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 36
+             </div>
+           </div>
+        </div>
+    </div>
+    <div class="panel panel-default col2">
+  <div class="panel-body">
+    今日排行
+  </div>
+  <ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">1</span>
+    <a href="" style="color: #414141">航拍中国</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">2</span>
+    <a href="" style="color: #414141">青年旅舍</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">3</span>
+      <a href="" style="color: #414141">冬天要去一次新疆?</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">4</span>
+      <a href="" style="color: #414141">从北京开往莫斯科的列车</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">5</span>
+      <a href="" style="color: #414141">News</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">6</span>
+      <a href="" style="color: #414141">News</a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
