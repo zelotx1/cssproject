@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>热点</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/mycss.css">
+    <link rel="stylesheet" href="../mycss.css">
     <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
     <script src="index.js"></script>
@@ -58,7 +58,7 @@
         .col2{
         display: inline-block;
         width: 25%;
-        position: relative;bottom: 1100px;
+        position: relative;bottom: 1000px;
         margin-left: 30px;
     }
         #hot{
@@ -124,7 +124,7 @@
         padding-left: 0px;
     }
     #hot{
-        background-image: url(/img/hot/bg.jpg);
+        background-image: url(../img/hot/bg.jpg);
         background-repeat: no-repeat;
         background-color: #e7e7e7;
     }
@@ -157,35 +157,35 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a href="/home.html" class="navbar-brand">多彩新闻</a>
+               <a href="../home.html" class="navbar-brand">多彩新闻</a>
            </div>
            <div class="navbar-collapse collapse">
              <ul class="nav navbar-nav ul1 navbar-left">
-                 <li class=" l1"><a href="/home.html" >精选</a></li>
-                 <li class="l2 active"><a href="/page/hot.html" >热点</a></li>
-                 <li class="l3"><a href="/page/cai.html" >财经</a></li>
+                 <li class=" l1"><a href="../home.html" >精选</a></li>
+                 <li class="l2 active"><a href="hot.html" >热点</a></li>
+                 <li class="l3"><a href="cai.html" >财经</a></li>
                  <li class="l4"><a href="#" >社会</a></li>
-                 <li class="l5"><a href="/page/sport.html" >体育</a></li>
+                 <li class="l5"><a href="sport.html" >体育</a></li>
                  <li class="l6"><a href="travel.html" >旅游</a></li>
                  <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/page/travel.html">旅游</a></li>
+            <li><a href="travel.html">旅游</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/page/travel.html">军事</a></li>
+            <li><a href="travel.html">军事</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/page/travel.html">时尚</a></li>
+            <li><a href="travel.html">时尚</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/page/travel.html">历史</a></li>
+            <li><a href="travel.html">历史</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/page/travel.html">天气</a></li>
+            <li><a href="travel.html">天气</a></li>
           </ul>
 </li>
              </ul>
                <ul class="nav navbar-nav navbar-right">
-                   <li><a href="/page/login.html">登录</a></li>
-                   <li><a href="/page/regist.html">注册</a></li>
-                   <li><a href="/manage/add.html">管理</a></li>
-                   <li><a href="/page/call.html">联系我们</a></li>
+                   <li><a href="login.html">登录</a></li>
+                   <li><a href="regist.html">注册</a></li>
+                   <li><a href="../manage/add.html">管理</a></li>
+                   <li><a href="call.html">联系我们</a></li>
                </ul>
            </div>
        </div>
@@ -198,7 +198,7 @@
       <div class="row video" style="margin-top: 150px;border-top: 5px solid #da280b">
         <h2 style="color: black;font-size: 40px;text-align: center">习近平会见全国道德模范代表侧记</h2>
          <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="/img/bandicam%202017-11-18%2011-41-19-281.mp4"></iframe>
+          <iframe class="embed-responsive-item" src="../img/bandicam%202017-11-18%2011-41-19-281.mp4"></iframe>
          </div>
          <p style="text-indent: 40px; margin-top: 30px;font-size: 20px">央视新闻11月17日消息，11月17日上午，人民大会堂金色大厅暖意融融，参加全国精神文明建设表彰大会的600多名代表精神饱满、笑容洋溢。9时30分，习近平等来到这里，现场响起热烈掌声。习近平等高兴地同代表们热情握手，亲切交谈，代表们纷纷向总书记问好。看到93岁的中船重工719研究所名誉所长黄旭华、82岁的贵州省遵义市播州区平正仡佬族乡草王坝村原党支部书记黄大发两位全国道德模范代表年事已高，站在代表们中间，习近平握住他们的手，请他们坐到自己身旁。两人执意推辞，总书记一再邀请，最后两人在总书记身边坐下。总书记对两位老模范如此关心和尊重，全场人都十分感动，大家长时间热烈鼓掌。随后，习近平等同代表们合影留念。</p>
           <button type="button" id="btn1" class="btn btn-primary btn-lg active"><span id="icon1" class="glyphicon glyphicon-heart"></span> 点赞</button>
@@ -214,10 +214,13 @@
              }
           </script>
            <h3>评论</h3>
+           <textarea name="" style="width: 80%;height: 50px" cols="30" rows="1"></textarea>
+           <button style="float: right;background-color: gray" type="button" class="btn btn-primary btn-lg active">发表</button>
+           <hr>
            <div class="media">
           <div class="media-left media-middle">
        <a href="#">
-          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+          <img style="width: 70px;height: 70px" class="media-object" src="../img/t1.jpg" alt="...">
         </a>
        </div>
      <div class="media-body">
@@ -228,7 +231,7 @@
                 <div class="media">
           <div class="media-left media-middle">
        <a href="#">
-          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+          <img style="width: 70px;height: 70px" class="media-object" src="../img/t1.jpg" alt="...">
         </a>
        </div>
      <div class="media-body">
@@ -239,7 +242,7 @@
                 <div class="media">
           <div class="media-left media-middle">
        <a href="#">
-          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+          <img style="width: 70px;height: 70px" class="media-object" src="../img/t1.jpg" alt="...">
         </a>
        </div>
      <div class="media-body">
@@ -250,7 +253,7 @@
                 <div class="media">
           <div class="media-left media-middle">
        <a href="#">
-          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+          <img style="width: 70px;height: 70px" class="media-object" src="../img/t1.jpg" alt="...">
         </a>
        </div>
      <div class="media-body">

@@ -1,5 +1,6 @@
 body{
     background-image: url(img/48-Ice.png);
+    background-attachment: fixed;
 }
 @media screen and (max-width:768px) {
 }
@@ -23,16 +24,16 @@ body{
     border-bottom: 2px solid #da280b;
 }
 .l3{
-    border-bottom: 2px solid #fec20a;
+    border-bottom: 2px solid #fcff27;
 }
 .l4{
     border-bottom: 2px solid #b800f4;
 }
 .l5{
-    border-bottom: 2px solid #b800f4;
+    border-bottom: 2px solid #3aec04;
 }
 .l6{
-    border-bottom: 2px solid #e25a00;
+    border-bottom: 2px solid #ff8400;
 }
 /*内容*/
 /*part1*/
