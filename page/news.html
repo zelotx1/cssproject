@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>热点</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/mycss.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![ednif]-->
+</head>
+<style>
+@media screen and (max-width:768px) {
+        .col1{
+        width: 100%;
+        display: block;
+        
+    }
+        .col2{
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hot{
+        background-size: 200%;
+        background-position: 0px 35px;
+    }
+    .well h4{
+        font-size: 18px;
+    }
+    .well p{
+        font-size: 12px;
+    }
+        .well .ping{
+        float: left;
+        margin-top: 5px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 140px;
+        width: 260px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 1100px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 150%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+            .well .ping{
+        float: left;
+        margin-top: 35px;
+    }
+
+}
+@media screen and (min-width:992px) {
+        .col1{
+        width: 70%;
+        display: inline-block;
+        
+    }
+        .col2{
+        display: inline-block;
+        width: 25%;
+        position: relative;bottom: 950px;
+        margin-left: 30px;
+    }
+        #hot{
+        background-size: 100%;
+        background-position: 0px 35px;
+    }
+        #part1{
+        margin-top: 50px;
+    }
+        #hot img{
+        box-shadow: none;
+        border-radius: 0;
+        height: 160px;
+        width: 260px;
+    }
+            .well .ping{
+        float: left;
+        margin-top: 35px;
+    }
+    
+}
+    .well{
+        border-radius: 0px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .well h4{
+        color: black;
+        font-weight: bold;
+    }
+    .well .col-md-4{
+        padding-left: 0px;
+    }
+    #hot{
+        background-image: url(/img/hot/bg.jpg);
+        background-repeat: no-repeat;
+        background-color: #e7e7e7;
+    }
+    #hot h1{
+        font-size: 50px;
+        color: white;
+    }
+    .well .ping{
+        float: left;
+    }
+    .video{
+        padding: 50px;
+        background-color: white;
+    }
+    #btn1,#btn2{
+        background-color: gray;
+        border: 0px;
+    }
+
+
+    </style>
+<body id="hot">
+<!--导航栏-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menunav">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="sr-only">切换导航</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="/home.html" class="navbar-brand">多彩新闻</a>
+           </div>
+           <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav ul1 navbar-left">
+                 <li class=" l1"><a href="/home.html" >精选</a></li>
+                 <li class="l2 active"><a href="/page/hot.html" >热点</a></li>
+                 <li class="l3"><a href="/page/cai.html" >财经</a></li>
+                 <li class="l4"><a href="#" >社会</a></li>
+                 <li class="l5"><a href="/page/sport.html" >体育</a></li>
+                 <li class="l6"><a href="travel.html" >旅游</a></li>
+                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/page/travel.html">旅游</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/page/travel.html">军事</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/page/travel.html">时尚</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/page/travel.html">历史</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/page/travel.html">天气</a></li>
+          </ul>
+</li>
+             </ul>
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="/page/login.html">登录</a></li>
+                   <li><a href="/page/regist.html">注册</a></li>
+                   <li><a href="/manage/add.html">管理</a></li>
+                   <li><a href="/page/call.html">联系我们</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+<!--内容-->
+<div id="part1">
+<div class="container">
+    <h1>热点</h1>
+    <div class="col1">
+      <div class="row video" style="margin-top: 150px;border-top: 5px solid #da280b">
+        <h2 style="color: black;font-size: 40px;text-align: center">习近平会见全国道德模范代表侧记</h2>
+         <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="/img/bandicam%202017-11-18%2011-41-19-281.mp4"></iframe>
+         </div>
+         <p style="text-indent: 40px; margin-top: 30px;font-size: 20px">央视新闻11月17日消息，11月17日上午，人民大会堂金色大厅暖意融融，参加全国精神文明建设表彰大会的600多名代表精神饱满、笑容洋溢。9时30分，习近平等来到这里，现场响起热烈掌声。习近平等高兴地同代表们热情握手，亲切交谈，代表们纷纷向总书记问好。看到93岁的中船重工719研究所名誉所长黄旭华、82岁的贵州省遵义市播州区平正仡佬族乡草王坝村原党支部书记黄大发两位全国道德模范代表年事已高，站在代表们中间，习近平握住他们的手，请他们坐到自己身旁。两人执意推辞，总书记一再邀请，最后两人在总书记身边坐下。总书记对两位老模范如此关心和尊重，全场人都十分感动，大家长时间热烈鼓掌。随后，习近平等同代表们合影留念。</p>
+          <button type="button" id="btn1" class="btn btn-primary btn-lg active"><span id="icon1" class="glyphicon glyphicon-heart"></span> 点赞</button>
+         <button type="button" id="btn2" class="btn btn-primary btn-lg active"><span id="icon2" class="glyphicon glyphicon-star"></span> 收藏</button>
+         <script>
+          var btn1=document.getElementById('btn1');
+             btn1.onclick=function(){
+                document.getElementById("icon1").style.color="red";
+             }
+            var btn2=document.getElementById('btn2');
+             btn2.onclick=function(){
+                document.getElementById("icon2").style.color="yellow";
+             }
+          </script>
+           <h3>评论</h3>
+           <div class="media">
+          <div class="media-left media-middle">
+       <a href="#">
+          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+        </a>
+       </div>
+     <div class="media-body">
+    <h4 class="media-heading">网友1</h4>
+    大国领导人这等亲切，这等尊老敬重各条战线上优秀代表，充分说明家风何等重要，更说明习仲勋同志教子有方，有这样平易近人，和蔼可亲的领导人实乃我辈之幸福！
+   </div>
+</div>
+                <div class="media">
+          <div class="media-left media-middle">
+       <a href="#">
+          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+        </a>
+       </div>
+     <div class="media-body">
+    <h4 class="media-heading">网友2</h4>
+    大国领导人这等亲切，这等尊老敬重各条战线上优秀代表，充分说明家风何等重要，更说明习仲勋同志教子有方，有这样平易近人，和蔼可亲的领导人实乃我辈之幸福！
+   </div>
+</div>
+                <div class="media">
+          <div class="media-left media-middle">
+       <a href="#">
+          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+        </a>
+       </div>
+     <div class="media-body">
+    <h4 class="media-heading">网友3</h4>
+    大国领导人这等亲切，这等尊老敬重各条战线上优秀代表，充分说明家风何等重要，更说明习仲勋同志教子有方，有这样平易近人，和蔼可亲的领导人实乃我辈之幸福！
+   </div>
+</div>
+                <div class="media">
+          <div class="media-left media-middle">
+       <a href="#">
+          <img style="width: 70px;height: 70px" class="media-object" src="/img/t1.jpg" alt="...">
+        </a>
+       </div>
+     <div class="media-body">
+    <h4 class="media-heading">网友4</h4>
+    尤如重现毛泽东主席和陈永贵钱学森当年的那一幕！
+   </div>
+</div>
+     
+      </div>
+    </div>
+    <div class="panel panel-default col2">
+  <div class="panel-body">
+    今日排行
+  </div>
+  <ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">1</span>
+    <a href="" style="color: #414141">十九大</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">2</span>
+    <a href="" style="color: #414141">揭秘世界顶级航母</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">3</span>
+      <a href="" style="color: #414141">解读习近平APEC演讲</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">4</span>
+      <a href="" style="color: #414141">News</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">5</span>
+      <a href="" style="color: #414141">News</a>
+  </li>
+  <li class="list-group-item">
+    <span class="badge">6</span>
+      <a href="" style="color: #414141">News</a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
